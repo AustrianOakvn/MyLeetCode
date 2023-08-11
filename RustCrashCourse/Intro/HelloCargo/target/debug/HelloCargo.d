@@ -1,0 +1,1 @@
+/mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/RustCrashCourse/Intro/HelloCargo/target/debug/HelloCargo: /mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/RustCrashCourse/Intro/HelloCargo/src/main.rs

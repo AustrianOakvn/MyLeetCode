@@ -52,4 +52,8 @@ Xem file subarray-minimum-element.hpp
 
 - Ta sẽ thực hiện thay đổi vị trí ban đầu của cửa sổ trượt bằng cách so sánh `sum` với `s` nếu `sum` lớn hơn hoặc bằng thì vị trí ban đầu sẽ trượt sang phải.
 
-
+```cpp
+Xem file subarray-minimum-element.hpp
+```
+Time complexity: O(n)
+Space complexity: O(1)

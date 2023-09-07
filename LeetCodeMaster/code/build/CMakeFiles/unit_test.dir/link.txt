@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/unit_test.dir/test/remove-element-test.cpp.o  -o unit_test  libremove_element_test.a 

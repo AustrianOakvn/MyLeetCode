@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/src/remove-element-test.cpp
+acutest.h
+/mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/src/acutest.h
+remove-element.hpp
+/mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/src/remove-element.hpp
+stdexcept
+-
+

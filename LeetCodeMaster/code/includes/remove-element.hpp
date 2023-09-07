@@ -1,3 +1,6 @@
+#ifndef REMOVE_ELEMENT_HPP
+#define REMOVE_ELEMENT_HPP
+
 #include <vector>
 
 
@@ -26,4 +29,6 @@ class Solution{
       }
       return slowPointer;
     }
-}
+};
+
+#endif

@@ -1,0 +1,19 @@
+Start testing: Sep 07 11:10 JST
+----------------------------------------------------------
+Unable to find executable: test_remove_element
+1/1 Testing: run_test
+1/1 Test: run_test
+Command: ""
+Directory: /mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/build
+"run_test" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"run_test" end time: Sep 07 11:10 JST
+"run_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 07 11:10 JST

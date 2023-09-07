@@ -122,6 +122,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named my_test
+
+# Build rule for target.
+my_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_test
+.PHONY : my_test
+
+# fast build rule for target.
+my_test/fast:
+	$(MAKE) -f CMakeFiles/my_test.dir/build.make CMakeFiles/my_test.dir/build
+.PHONY : my_test/fast
+
+#=============================================================================
 # Target rules for targets named leetcode
 
 # Build rule for target.
@@ -134,13 +147,40 @@ leetcode/fast:
 	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/build
 .PHONY : leetcode/fast
 
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
 src/remove-element-test.o: src/remove-element-test.cpp.o
 
 .PHONY : src/remove-element-test.o
 
 # target to build an object file
 src/remove-element-test.cpp.o:
-	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/src/remove-element-test.cpp.o
+	$(MAKE) -f CMakeFiles/my_test.dir/build.make CMakeFiles/my_test.dir/src/remove-element-test.cpp.o
 .PHONY : src/remove-element-test.cpp.o
 
 src/remove-element-test.i: src/remove-element-test.cpp.i
@@ -149,7 +189,7 @@ src/remove-element-test.i: src/remove-element-test.cpp.i
 
 # target to preprocess a source file
 src/remove-element-test.cpp.i:
-	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/src/remove-element-test.cpp.i
+	$(MAKE) -f CMakeFiles/my_test.dir/build.make CMakeFiles/my_test.dir/src/remove-element-test.cpp.i
 .PHONY : src/remove-element-test.cpp.i
 
 src/remove-element-test.s: src/remove-element-test.cpp.s
@@ -158,7 +198,7 @@ src/remove-element-test.s: src/remove-element-test.cpp.s
 
 # target to generate assembly for a file
 src/remove-element-test.cpp.s:
-	$(MAKE) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/src/remove-element-test.cpp.s
+	$(MAKE) -f CMakeFiles/my_test.dir/build.make CMakeFiles/my_test.dir/src/remove-element-test.cpp.s
 .PHONY : src/remove-element-test.cpp.s
 
 # Help Target
@@ -170,7 +210,11 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... my_test"
 	@echo "... leetcode"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... src/remove-element-test.o"
 	@echo "... src/remove-element-test.i"
 	@echo "... src/remove-element-test.s"

@@ -1,24 +1,20 @@
+
+# Test
 cmake_minimum_required(VERSION 3.0.0)
-project(leetcode VERSION 0.1.0 LANGUAGES C CXX)
+project(leetcode)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCES src/remove-element-test.cpp)
+include_directories(includes)
 
-add_executable(${PROJECT_NAME} ${SOURCES})
+set(SOURCE_FILES src/main.cpp)
 
-target_include_directories(leetcode  
-        PUBLIC
-        ${PROJECT_SOURCE_DIR}/includes
-)
+set(TEST_SOURCE_FILES src/remove-element-test.cpp)
 
-# include(CTest)
+add_executable(leetcode ${SOURCE_FILES})
+
+add_executable(my_test ${TEST_SOURCE_FILES})
+
 enable_testing()
 
-# add_executable(remove_element_test src/remove-element-test.cpp)
-
-# Add the test which is simply run the application
-add_test(NAME run_test COMMAND ${PROJECT_NAME})
-
-# Add the test which is run the acutest case
-# add_test(NAME run_test COMMAND remove_element_test)
+add_test(NAME my_unit_test COMMAND my_test)

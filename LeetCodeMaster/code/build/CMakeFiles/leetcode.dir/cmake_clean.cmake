@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/leetcode.dir/src/remove-element-test.cpp.o"
+  "CMakeFiles/leetcode.dir/src/main.cpp.o"
   "leetcode"
   "leetcode.pdb"
 )

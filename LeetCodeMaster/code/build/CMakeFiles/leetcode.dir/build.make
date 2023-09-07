@@ -57,27 +57,27 @@ include CMakeFiles/leetcode.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/leetcode.dir/flags.make
 
-CMakeFiles/leetcode.dir/src/remove-element-test.cpp.o: CMakeFiles/leetcode.dir/flags.make
-CMakeFiles/leetcode.dir/src/remove-element-test.cpp.o: ../src/remove-element-test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/leetcode.dir/src/remove-element-test.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode.dir/src/remove-element-test.cpp.o -c /mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/src/remove-element-test.cpp
+CMakeFiles/leetcode.dir/src/main.cpp.o: CMakeFiles/leetcode.dir/flags.make
+CMakeFiles/leetcode.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/leetcode.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/leetcode.dir/src/main.cpp.o -c /mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/src/main.cpp
 
-CMakeFiles/leetcode.dir/src/remove-element-test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode.dir/src/remove-element-test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/src/remove-element-test.cpp > CMakeFiles/leetcode.dir/src/remove-element-test.cpp.i
+CMakeFiles/leetcode.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/leetcode.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/src/main.cpp > CMakeFiles/leetcode.dir/src/main.cpp.i
 
-CMakeFiles/leetcode.dir/src/remove-element-test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode.dir/src/remove-element-test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/src/remove-element-test.cpp -o CMakeFiles/leetcode.dir/src/remove-element-test.cpp.s
+CMakeFiles/leetcode.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/leetcode.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/src/main.cpp -o CMakeFiles/leetcode.dir/src/main.cpp.s
 
 # Object files for target leetcode
 leetcode_OBJECTS = \
-"CMakeFiles/leetcode.dir/src/remove-element-test.cpp.o"
+"CMakeFiles/leetcode.dir/src/main.cpp.o"
 
 # External object files for target leetcode
 leetcode_EXTERNAL_OBJECTS =
 
-leetcode: CMakeFiles/leetcode.dir/src/remove-element-test.cpp.o
+leetcode: CMakeFiles/leetcode.dir/src/main.cpp.o
 leetcode: CMakeFiles/leetcode.dir/build.make
 leetcode: CMakeFiles/leetcode.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable leetcode"

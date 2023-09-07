@@ -1,4 +1,5 @@
 /mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/build/CMakeFiles/rebuild_cache.dir
 /mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/build/CMakeFiles/edit_cache.dir
 /mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/build/CMakeFiles/test.dir
+/mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/build/CMakeFiles/my_test.dir
 /mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/build/CMakeFiles/leetcode.dir

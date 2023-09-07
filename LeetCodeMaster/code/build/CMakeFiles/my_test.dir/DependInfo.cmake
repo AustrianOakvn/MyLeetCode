@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/src/main.cpp" "/mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/build/CMakeFiles/leetcode.dir/src/main.cpp.o"
+  "/mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/src/remove-element-test.cpp" "/mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/build/CMakeFiles/my_test.dir/src/remove-element-test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

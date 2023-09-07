@@ -6,3 +6,13 @@
 
 #IncludeRegexTransform: 
 
+../includes/remove-element.hpp
+vector
+-
+
+/mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/src/main.cpp
+remove-element.hpp
+/mnt/30A83E93A83E5794/2023/Ritsumeikan/MyLeetCode/LeetCodeMaster/code/src/remove-element.hpp
+iostream
+-
+

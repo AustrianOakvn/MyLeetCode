@@ -2,7 +2,7 @@
 
 Danh sách liên kết là một cấu trúc tuyến tính được kết nối với nhau theo chuỗi bằng con trỏ. Mỗi node bao gồm 2 phần, trường dữ liệu và trường con trỏ (lưu con trỏ trỏ đến node tiếp theo). Trường cont rỏ của node cuối cùng trong danh sách trỏ đến null (null pointer).
 
-![linked_list](../Images/linked_lít.png)
+![linked_list](../Images/linked_list.png)
 
 ## Phân loại danh sách liên kết
 

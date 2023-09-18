@@ -1,43 +1,49 @@
 
-class Solution{
-  public:
-    ListNode* removeElements(ListNode* head, int val){
-      while(head!=NULL && head->val==val){
-        ListNode* tmp = head;
-        head = head->next;
+struct ListNode {
+  int val;
+  ListNode *next;
+  ListNode() : val(0), next(nullptr) {}
+  ListNode(int x) : val(x), next(nullptr) {}
+  ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
+class Solution {
+public:
+  ListNode *removeElements(ListNode *head, int val) {
+    while (head != NULL && head->val == val) {
+      ListNode *tmp = head;
+      head = head->next;
+      delete tmp;
+    }
+    ListNode *cur = head;
+    while (cur != NULL && cur->next != NULL) {
+      if (cur->next->val == val) {
+        ListNode *tmp = cur->next;
+        cur->next = cur->next->next;
         delete tmp;
+      } else {
+        cur = cur->next;
       }
-      ListNode* cur = head;
-      while(cur != NULL && cur->next != NULL){
-        if(cur->next->val == val){
-          ListNode* tmp = cur->next;
-          cur->next = cur->next->next;
-          delete tmp;
-        }else{
-          cur = cur->next;
-        }
-      }
-      return head;
     }
+    return head;
+  }
 
-    ListNode* removeElements2(ListNode* head, int val){
-      // Create a new dummy node
-      ListNode* dummyHead = new ListNode(0);
-      dummyHead->next = head;
-      ListNode* cur = dummyHead;
+  ListNode *removeElements2(ListNode *head, int val) {
+    // Create a new dummy node
+    ListNode *dummyHead = new ListNode(0);
+    dummyHead->next = head;
+    ListNode *cur = dummyHead;
 
-      while(cur->next != NULL){
-        if(cur->next->val == val){
-          ListNode* tmp = cur->next;
-          cur->next = cur->next->next;
-          delete tmp;
-        }
-        else{
-          cur = cur->next;
-        }
+    while (cur->next != NULL) {
+      if (cur->next->val == val) {
+        ListNode *tmp = cur->next;
+        cur->next = cur->next->next;
+        delete tmp;
+      } else {
+        cur = cur->next;
       }
-      head = dummyHead->next;
-      delete dummyHead;
-      return head;
     }
+    head = dummyHead->next;
+    delete dummyHead;
+    return head;
+  }
 };

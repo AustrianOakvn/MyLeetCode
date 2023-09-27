@@ -15,13 +15,12 @@ Example 3:
 `Output: [1]`
 
 
-while cur
-cur = 2, prev = 1
-<!-- tmp = cur->next -->
-tmp_cur = cur->next->next
-tmp_prev = cur->next
-prev->next = cur->next
-cur->next = prev
-cur = tmp_cur
-prev = tmp_prev
+## Hướng giải
+
+Đối với bài kiểu này, nên sử dụng node head ảo sẽ thuận tiện hơn. Nếu không thì ta sẽ phải thực hiện head node riêng.
+
+Bước tiếp theo đó là thay đổi 2 node liền kề
+Ta cần vẽ hình minh họa vì rất dễ gặp sai sót.
+
+![SwapLinkedList](./SwapLinkedList.png)
 

@@ -10,7 +10,7 @@ class Vec3{
   public:
     double e[3];
 
-    Vec3(): e(0, 0, 0) {}
+    Vec3(): e{0, 0, 0} {}
     Vec3(double e0, double e1, double e2) : e{e0, e1, e2} {}
 
     double x() const {return e[0];}
@@ -44,7 +44,7 @@ class Vec3{
     }
 
     double length_squared() const {
-      return e[0]*e[0] + e[1]*e[1] + e[2]*e[2]
+      return e[0]*e[0] + e[1]*e[1] + e[2]*e[2];
     }
     
 };
@@ -72,17 +72,27 @@ inline Vec3 operator*(double t, const Vec3&v){
 }
 
 inline Vec3 operator*(const Vec3&u, double t){
-  return t*v;
+  return t*u;
 }
 
 inline Vec3 operator/(const Vec3&u, double t){
-  return (1/t) *v;
+  return (1/t) *u;
 }
 
 inline double dot(const Vec3&u, const Vec3&v){
   return u.e[0] * v.e[0]
         + u.e[1] * v.e[1]
         + u.e[2] * v.e[2];
+}
+
+inline Vec3 cross(const Vec3& u, const Vec3& v){
+  return Vec3(u.e[1]*v.e[2] - u.e[2]*v.e[1],
+              u.e[2]*v.e[0] - u.e[0]*v.e[2],
+              u.e[0]*v.e[1] - u.e[1]*v.e[0]);
+}
+
+inline Vec3 unit_vector(const Vec3& v){
+  return v / v.length();
 }
 
 //inline 

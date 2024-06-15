@@ -6,8 +6,11 @@
 
 
 
-Color ray_color(const ray&r){
-  return Color(0, 0, 0);
+Color ray_color(const Ray&r){
+  Vec3 unit_direction = unit_vector(r.direction());
+  auto a = 0.5*(unit_direction.y() + 1.0);
+  return (1.0-a)*Color(1.0, 1.0, 1.0) + a*Color(0.5, 0.7, 1.0);
+  //return Color(0, 0, 0);
 }
 
 
@@ -22,7 +25,7 @@ int main(){
   image_height = (image_height < 1) ? 1: image_height;
 
   auto viewport_height = 2.0;
-  auto veiwport_width = viewport_height * (double(image_width)/image_height);
+  auto viewport_width = viewport_height * (double(image_width)/image_height);
   auto focal_length = 1.0;
   auto camera_center = Point3(0, 0, 0);
 

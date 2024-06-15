@@ -21,7 +21,7 @@ class Ray {
   private:
     Point3 orig;
     Vec3 dir;
-}
+};
 
 
 #endif

@@ -7,10 +7,17 @@
 bool hit_sphere(const Point3& center, double radius, const Ray&r){
   Vec3 oc = center - r.origin();
   auto a = dot(r.direction(), r.direction());
-  auto b = -2.0*dot(r.direction(), oc);
-  auto c = dot(oc, oc) - radius*radius;
-  auto discriminant = b*b - 4*a*c;
-  return (discriminant >= 0);
+  //auto b = -2.0*dot(r.direction(), oc);
+  auto h = dot(r.direction(), oc);
+  //auto c = dot(oc, oc) - radius*radius;
+  auto c = oc.length_squared() - radius*radius;
+  //auto discriminant = b*b - 4*a*c;
+  auto discriminant = h*h - a*c;
+  if (discriminant < 0){
+    return -1.0;
+  } else {
+    return (h-sqrt(discriminant)) / a;
+  }
 }
 
 Color ray_color(const Ray&r){

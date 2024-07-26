@@ -52,3 +52,21 @@ int Sum(struct Array *arr){
   }
   return sum;
 }
+
+int main(){
+  int choice;
+  int index, x;
+  struct Array arr1;
+  printf("Enter size of array");
+  scanf("%d", &arr1.size);
+
+  arr1.A = (int*)malloc(arr1.size*sizeof(int));
+  arr1.length=0;
+  do{
+    printf("\n Menu:\n");
+    printf("1. Insert:\n");
+    printf("2. Delete:\n");
+    printf("3. Search:\n");
+    printf("4. Sum:\n");
+  }
+}
